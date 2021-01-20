@@ -1,13 +1,90 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+body {
+  background-color: darkslategray;  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.coinsummary-maindiv{
+  display: flex;
+  justify-content: center;
+}
+
+.coinsummary{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.addcoin-div{
+  background-color: orangered;
+  height: 40px;
+  position: absolute;
+}
+
+.coin-showbox{
+  width: 100%;
+  margin-top: 60px;
+}
+
+.coinlist{
+  position: relative;
+  width:100%;
+  vertical-align: center;
+}
+
+.coinlist li {
+  height: 100px;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin: auto;
+}
+
+.coinlist-image {
+  vertical-align: middle;
+  object-fit: contain;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 60px;
+  margin: 10px;
+}
+
+.coinlist span{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.coinlist i{
+  /* background-color: fuchsia; */
+  padding: 10px;
+}
+
+.ic{
+  margin-left: 20px;
+}
+
+.cross{
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border: 2px solid orange; */
+  border-radius: 50%;
+  width: 30px;
+  height:30px;
+}
+
+.coin:hover .cross{
+  display: inline;
 }
